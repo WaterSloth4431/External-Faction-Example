@@ -1,6 +1,6 @@
 Push-Location
 
-$armaToolsFolder = "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools"
+$armaToolsFolder = "D:\SteamLibrary\steamapps\common\Arma 3 Tools"
 
 $pboFileName = Get-Content -Path "PBO_FILE_NAME.txt" -TotalCount 1
 "Read PBO file name: $pboFileName`n"

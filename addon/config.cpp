@@ -30,10 +30,20 @@ class VinExternalFactions {
 	
 	// Add a new class per each new faction (military or civilian or police)
 	// Class name must be unique!
-	class MilitaryFactionExample : VinExternalFactionBase {
+	class WW2_CIVILIAN : VinExternalFactionBase {
 		// File paths must use the PATH_TO_FILE(...) macro like below, otherwise Arma won't find your file
 		loadoutsInitFile = PATH_TO_FILE(initLoadouts.sqf);
-		file = PATH_TO_FILE(initMilitary.sqf);	// Must contain valid bath, otherwise it is ignored
+		file = PATH_TO_FILE(WW2_CIVILIAN.sqf);	// Must contain valid bath, otherwise it is ignored
+		version = 1; // Don't change this!
+	};
+	class WW2_SS_POLICE : VinExternalFactionBase {
+		// File paths must use the PATH_TO_FILE(...) macro like below, otherwise Arma won't find your file
+		file = PATH_TO_FILE(WW2_SS_POLICE.sqf);	// Must contain valid bath, otherwise it is ignored
+		version = 1; // Don't change this!
+	};
+	class WW2_HEER : VinExternalFactionBase {
+		// File paths must use the PATH_TO_FILE(...) macro like below, otherwise Arma won't find your file
+		file = PATH_TO_FILE(WW2_HEER.sqf);	// Must contain valid bath, otherwise it is ignored
 		version = 1; // Don't change this!
 	};
 };
