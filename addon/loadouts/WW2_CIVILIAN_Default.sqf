@@ -8,6 +8,19 @@ removeHeadgear this;
 removeGoggles this;
 
 private _uniforms = [
+	"U_GELIB_FRA_Assistant",
+	"U_GELIB_FRA_Citizen01",
+	"U_GELIB_FRA_Citizen02",
+	"U_GELIB_FRA_Citizen03",
+	"U_GELIB_FRA_Citizen04",
+	"U_GELIB_FRA_Functionary01",
+	"U_GELIB_FRA_Functionary02",
+	"U_GELIB_FRA_Woodlander01",
+	"U_GELIB_FRA_Woodlander02",
+	"U_GELIB_FRA_Schoolteacher",
+	"U_GELIB_FRA_Doctor1",
+	"U_GELIB_FRA_Doctor2",
+	"U_GELIB_FRA_Villager01",
 	"U_LIB_CIV_Worker_2", 
 	"U_LIB_CIV_Worker_1", 
 	"U_LIB_CIV_Worker_4", 
@@ -44,7 +57,7 @@ private _uniforms = [
 this forceAddUniform selectRandom _uniforms;
 
 private _headgear = [
-    "GEH_Chapeau_Noir2",
+	"GEH_Chapeau_Noir2",
 	"GEH_Chapeau_Noir1",
 	"GEH_Chapeau_MarronFonce",
 	"GEH_Chapeau_MarronClair",
@@ -113,6 +126,9 @@ if(random 5 < 1) then {
 	this addGoggles selectRandomWeighted [
 		"fow_g_glasses1", 		1,
 		"fow_g_glasses2", 		1,
+		"fow_g_glasses3", 		1,
+		"fow_g_glasses4", 		1,
+		"G_LIB_GER_Helmet_Glasses", 		1,
 		"fow_g_glasses3", 		1
 	];
 };

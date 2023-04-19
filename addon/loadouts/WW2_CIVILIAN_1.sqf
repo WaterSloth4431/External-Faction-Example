@@ -10,6 +10,19 @@ removeGoggles this;
 [this, selectRandom gVanillaFaces] call BIS_fnc_setIdentity;
 
 private _uniforms = [
+	"U_GELIB_FRA_Assistant",
+	"U_GELIB_FRA_Citizen01",
+	"U_GELIB_FRA_Citizen02",
+	"U_GELIB_FRA_Citizen03",
+	"U_GELIB_FRA_Citizen04",
+	"U_GELIB_FRA_Functionary01",
+	"U_GELIB_FRA_Functionary02",
+	"U_GELIB_FRA_Woodlander01",
+	"U_GELIB_FRA_Woodlander02",
+	"U_GELIB_FRA_Schoolteacher",
+	"U_GELIB_FRA_Doctor1",
+	"U_GELIB_FRA_Doctor2",
+	"U_GELIB_FRA_Villager01",
 	"U_LIB_CIV_Worker_2", 
 	"U_LIB_CIV_Worker_1", 
 	"U_LIB_CIV_Worker_4", 
@@ -46,6 +59,17 @@ private _uniforms = [
 this forceAddUniform selectRandom _uniforms;
 
 private _headgear = [
+	"GEH_Chapeau_Noir2",
+	"GEH_Chapeau_Noir1",
+	"GEH_Chapeau_MarronFonce",
+	"GEH_Chapeau_MarronClair",
+	"GEH_Chapeau_GrisFonce",
+	"GEH_Chapeau_GrisClair",
+	"GEH_Chapeau_Gris",
+	"GEH_Chapeau_Brun",
+	"GEH_Beret_blk",
+	"GERDS_Beret1",
+	"GEH_Beret_blue",
 	"H_LIB_CIV_Villager_Cap_1",
 	"H_LIB_CIV_Villager_Cap_2",
 	"H_LIB_CIV_Villager_Cap_3",
@@ -74,6 +98,9 @@ if(random 5 < 1) then {
 	this addGoggles selectRandomWeighted [
 		"fow_g_glasses1", 		1,
 		"fow_g_glasses2", 		1,
+		"fow_g_glasses3", 		1,
+		"fow_g_glasses4", 		1,
+		"G_LIB_GER_Helmet_Glasses", 		1,
 		"fow_g_glasses3", 		1
 
 	];
